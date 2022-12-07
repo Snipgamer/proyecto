@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <app-toolbar></app-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-content>
+    <ion-grid>
+      <ion-row >
+          <img class="center" src="../assets/Imagenes/salmon ver.jpg" alt="">
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card *ngFor="let imagen of imagen" button="">
+            <ion-card-content>
+               <ion-img [src]="imagen.url"></ion-img>
+         
+             </ion-card-content>
+           </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+  
+  <ion-card *ngFor="let imagen of imagen" button="">
+    <ion-card-content>
+       <ion-img [src]="imagen.url"></ion-img>
+ 
+     </ion-card-content>
+   </ion-card>
+</ion-content>

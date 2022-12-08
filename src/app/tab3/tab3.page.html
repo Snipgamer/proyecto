@@ -1,29 +1,22 @@
 <ion-header [translucent]="true">
-  <ion-icon name="person-circle-outline" width="900px"></ion-icon>
+
 </ion-header>
 
-<ion-content class="rece">
+<ion-content [fullscreen]="true" class="rece">
 
-  <ion-icon size="xxl" name="person-circle-outline" width="900px"></ion-icon>
-  <ul>
-    <ion-icon name="person-circle-outline" width="900px"></ion-icon>
-    <li>(10g.) 2 cucharaditas de Naturísimo MAGGI®</li>
-    <li>(5g.) 1 cucharadita de Ajo en polvo</li>
-    <li>Pimienta al gusto</li>
-    <li>(130g.) 2 cebollas moradas pequeñas cortadas en cubos grandes</li>
-    <li>(130g.) 1 pimiento rojo</li>
-    <li>(130g.) 1 1/2 taza de brócoli</li>
-    <li>(130g.) 1 taza de Tomate Tomate cherry</li>
-    <li>(130g.) 2 tazas de hongos cortadas a la mitad</li>
-    <li>(130g.) 1 taza de zucchini cortadas en rodajas</li>
-    
-  </ul>
-  <h3>¡A cocinar!</h3>
-  <ul>
+  <ion-list class="form"  *ngFor="let cuenta of cuenta">
+    <h2>Cuenta</h2>
+
+    <ion-icon name="person-circle-sharp" class="icon"></ion-icon>
+    <li><h2>Usuario</h2></li>
+    <li><h4>{{cuenta.usuario}}</h4></li>
+    <li><h2>Correo electronico</h2></li>
+    <li>{{cuenta.Correo}}</li>
+    <li><h2>Subir receta</h2></li>
     <li>
-      1.  En un tazón, combinar el aceite, con el Naturísimo MAGGI®, el ajo en polvo y la pimienta.
+      
+        <ion-tab-button><ion-icon name="cloud-upload-outline"></ion-icon></ion-tab-button>
+    
     </li>
-    <li>Armar las brochetas en palitos de bambú colocando los vegetales según su preferencia. Cubrir las brochetas con el marinado y dejar reposar por 15 minutos.</li>
-    <li>3.  Cocinar en la parrilla por aproximadamente 10 minutos o hasta que los vegetales estén dorados.</li>
-  </ul>
+  </ion-list>
 </ion-content>

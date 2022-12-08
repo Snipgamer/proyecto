@@ -7,7 +7,7 @@
           <ion-card *ngFor="let imagen of imagen" button>
             <a href="dashboard/receta"><ion-img [src]="imagen.url" ></ion-img></a>
             <ion-card-content >
-              <h5> {{imagen.String}}</h5>
+              {{imagen.String}}
              </ion-card-content>
            </ion-card>
           </ion-buttons>

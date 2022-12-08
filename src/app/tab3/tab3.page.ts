@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page {
-
+ cuenta: any[]=[
+  {usuario: "*********", Correo:"*********@gmail.com"}
+ ]
   constructor() {}
 
 }

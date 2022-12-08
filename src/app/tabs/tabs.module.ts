@@ -15,6 +15,6 @@ import { ToolbarComponent } from '../toolbar/toolbar.component';
     FormsModule,
     TabsPageRoutingModule
   ],
-  declarations: [TabsPage,ToolbarComponent]
+  declarations: [TabsPage]
 })
 export class TabsPageModule {}

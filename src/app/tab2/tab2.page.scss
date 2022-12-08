@@ -1,0 +1,17 @@
+.center{
+    padding-top: 0px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2,auto);
+    
+    grid-gap: 0px;
+    grid-template-areas:
+      "a  b"
+      "a  b"
+      "c  d";
+}
+.h1{
+    text-align: center;
+    color: red;
+}

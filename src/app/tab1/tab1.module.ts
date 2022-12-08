@@ -17,6 +17,6 @@ import { ToolbarComponent } from '../toolbar/toolbar.component';
     ExploreContainerComponentModule,
     Tab1PageRoutingModule
   ],
-  declarations: [Tab1Page,ToolbarComponent]
+  declarations: [Tab1Page]
 })
 export class Tab1PageModule {}

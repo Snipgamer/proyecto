@@ -18,12 +18,7 @@ export class Tab1Page {
     {id:8, url:'../assets/Imagenes/tacos.jpg', String: 'Tacos de suadero'}
 
   ];
-  slideOpts = {
-    initialSlide: 1,
-    speed: 400,
-    slidesPerView: 2.5,
-    spaceBetween:30
-  };
+ 
 
   constructor() {}
 

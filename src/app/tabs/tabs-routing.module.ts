@@ -19,6 +19,11 @@ const routes: Routes = [
         path: 'cuenta',
         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
       },
+      {
+        path: 'receta',
+        loadChildren: () => import('../tab4/tab4.module').then( m => m.Tab4PageModule)
+      },
+    
      
       {
         path: '',
